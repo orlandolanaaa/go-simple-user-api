@@ -1,5 +1,5 @@
 # IntelliJ project files
-.idea
+
 *.iml
 
 # Binaries for programs and plugins
@@ -12,4 +12,3 @@
 *.out
 
 #local env
-.env
