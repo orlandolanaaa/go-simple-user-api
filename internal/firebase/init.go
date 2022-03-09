@@ -19,7 +19,7 @@ type Firebase struct {
 func (s *Firebase) NewService(ctx context.Context) (*Firebase, error) {
 	s.Ctx = ctx
 
-	opt := option.WithServiceAccountFile("cmd/pk/be-entry-task-firebase-adminsdk-jcmxl-758397b6f8.json")
+	opt := option.WithServiceAccountFile("internal/firebase/account-key/be-entry-task-firebase-adminsdk-jcmxl-758397b6f8.json")
 	var err error
 	s.Storage, err = cloud.NewClient(s.Ctx, opt)
 
